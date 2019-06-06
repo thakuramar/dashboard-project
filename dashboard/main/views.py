@@ -11,6 +11,7 @@ def home(request):
 
     for bd in board:
         boards_name.append(bd.name)
+        # Heyt this is the new change
 
     return HttpResponse('<br>'.join(boards_name))
 
